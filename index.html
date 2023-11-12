@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/user/favicon.ico" type="image/x-icon" />
+    <title>Anuj's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/1eb8db9042.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ************************Header******************************** -->
+        <div class="container" id="header">
+            <!-- creating navigation bar with logo -->
+            <nav id="navbar">
+                <a href="" class="profile-logo">
+                    <span class="logo-name"><span>&lt;</span>Anuj Verma <span>/&gt;</span></span>
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div>
+                    <span id="profession"></span>
+                </div>
+                <h1>Hi, I'm <span>Anuj</span><br />a CSE - AIML Student</h1>
+            </div>
+        </div>
+    <!-- ***********************About************************** -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/images/user/user.jpg" alt="img-background" />
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>
+                        Hello! It's nice meet with you! <br>
+                        Really happy to see you here. I’m an AI & Ml student, obsessive learner, and ruckus maker who is
+                        <br>
+                        trying to make a dent in the world. I love being surrounded by great people, and working on <br>
+                        projects that have the chance to make a scaled impact. <br>
+                    </p>
+                    <!-- adding tabs -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('technicals')">
+                            Technical Strength
+                        </p>
+                        <p class="tab-links" onclick="opentab('cores')">Core Strenght</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="technicals">
+                        <ul>
+                            <li><span>Web Development</span><br />Full Stack Development</li>
+                            <li><span>Vedio & Graphic Editing</span><br />Canva, Adobe Photoshop ,Davinci Resolve,
+                                Filmora</li>
+                            <li><span>DSA</span><br />Data Structure and Algorithm</li>
+                            <li><span>C++</span><br />Practicing DSA in C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="cores">
+                        <ul>
+                            <li><span>Leader</span><br />Able to lead my team well</li>
+                            <li>
+                                <span>Motivator</span><br />I'm able to motivate my team
+                                towards our goal
+                            </li>
+                            <li>
+                                <span>Patience</span><br />I'm always calm in all situations
+                            </li>
+                            <li>
+                                <span>Coding Enthusiast</span><br />Loves coding and finding
+                                solutions to the problem.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2022 - 2025</span><br />Pursuing B.Tech CS in specialization AI & ML from Axis
+                                Colleges, Kanpur
+                            </li>
+                            <li>
+                                <span>2019 - 2022</span><br />Completed Diploma in Civil Engineering from Government
+                                Polytechnic, Unnao
+                            </li>
+                            <li>
+                                <span>2017 - 2019</span><br />Completed Intermediate from Sardar Patel Inter College,
+                                Kanpur
+                            </li>
+                            <li>
+                                <span>2015 - 2017</span><br />Completed Highschool Saraswati Shiksha Niketan School,
+                                Kanpur
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***************************Services***************************** -->
+    <div id="experience">
+        <div class="container">
+            <h2 class="sub-title">Experience</h2>
+            <div class="intern-list">
+                <a href="https://www.linkedin.com/posts/anuj-verma-67493125a_webdevelopment-internshipcompleted-coderscave-activity-7116622606983716864-EvW4?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Coders Cave</h3>
+                        <p>I worked on various web development projects, such as a Netflix clone, a
+                            link shortener, an online code editor, and a personalized portfolio website, demonstrating
+                            my
+                            web design and development skills. <br>
+                            I received a Letter of Recommendation (LOR) after completing a one-month internship by Codes
+                            Cave and AICTE, showing my dedication to learning and improving my skills. <br>
+                            I learned how to develop web applications using both front-end and back-end technologies,
+                            such
+                            as HTML, CSS, JavaScript, and other web frameworks.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/anuj-verma-67493125a_ai-ibminternship-learningjourney-activity-7116299161200656386-3Pag?utm_source=share&utm_medium=member_desktop"
+                    target="_blank">
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>IBM</h3>
+                        <p>I participated in a one-month internship by IBM SkillBuild and AICTE,
+                            where I worked on creating novel AI-based solutions for mental health tracking. <br>
+                            I worked on an AI Mental Fitness Tracker project using Python on Google Colab, performing
+                            linear
+                            regression, random forest analysis, and database management for mental and substance use
+                            disorders. <br>
+                            I used libraries such as NumPy, Pandas, Seaborn, Matplotlib.pyplot, and Plotly.express to
+                            create
+                            charts and figures to visualize data, presenting key insights effectively.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- *****************Portfolio*********************** -->
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title">My Pojects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/images/project/bg_1.png" alt="Image of Project 1" />
+                    <div class="layer">
+                        <h3>News Monkey - Get Daily News</h3>
+                        <p>
+                            NewsMonkey is a web application that provides users with the latest news from around the
+                            world.
+                        </p>
+                        <a target="_blank" href="https://github.com/Anuj3553/newsMonkey"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/project/bg_2.png" alt="Image of Project 2" />
+                    <div class="layer">
+                        <h3>Sangeet Web Player - Get Your Vibe</h3>
+                        <p>
+                            Sangeet Player is the Best Music Player with stylish designs in it. This music player
+                            lets you manage all your music files easily.
+                        </p>
+                        <a target="_blank" href="https://github.com/Anuj3553/Sangeet-Web-Player"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/images/project/bg_3.jpeg" alt="Image of Project 3" />
+                    <div class="layer">
+                        <h3>Bak Bak - Realtime Chatting Website</h3>
+                        <p>
+                            With BakBak, you can chat and connect on your terms, whether it's through live video
+                            chats or text messages.
+                        </p>
+                        <a target="_blank" href="https://github.com/Anuj3553/BakBak"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Anuj3553?tab=repositories" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- **************************Contact************************ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>anujverma3553@gmail.com
+                    </p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8081718102</p>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.facebook.com/people/Anuj-Verma/pfbid02jSSXa4VtUA1VUt9xMxfNvwz1Rv54Verf4pazFzBLrZCWVKkbS8umPbZyMTrPceqTl/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Anujver04515928"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/anuj.verma_official/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anuj-verma-67493125a/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="./assets/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Made with <i class="fa-solid fa-heart"></i> by Anuj Verma
+            </p>
+        </div>
+    </div>
+
+</body>
+
+<!-- <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script> -->
+
+<script>
+    // calling to classes and storing them in variable
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    // defining opentab function which will select particular tag and hide other.
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            // it will remove this class name for all the tab links.
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            // it will remove this class content for all the tab links.
+            tabcontent.classList.remove("active-tab");
+        }
+        // it will add active link and display the color on slectd tab
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- for hamburger icon -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<!-- Typed Script -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed("#profession", {
+        strings: [
+            "Web Developer",
+            "Graphic Designer",
+            "Web Designer",
+            "Vedio Editor",
+            "Coder",
+        ],
+        typeSpeed: 50,
+        loop: true,
+    });
+</script>
+
+<!-- input to google form -->
+<script>
+    const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwRD2JaUvH5PSCU5KGgj2cViXedg8Tg59Cj48ik_0QuBWEMvKlBmheBEgTmP9AD65KvuQ/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+                msg.innerHTML =
+                    "Submitted Succesfully<br/>Thank you for contacting, you will get a reply soon.";
+                setTimeout(function () {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch((error) => console.error("Error!", error.message));
+    });
+</script>
+
+</html>
